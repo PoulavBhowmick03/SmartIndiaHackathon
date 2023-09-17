@@ -36,7 +36,7 @@ function Menu() {
           </Link>
         </li>
         <li>
-          <Link to="/certificates">
+          <Link to="../certificate">
             <FaCertificate /> 
           </Link>
         </li>
@@ -51,7 +51,7 @@ function Menu() {
           </Link>
         </li>
         <li>
-          <Link to="/questions">
+          <Link to="/about">
             <FaQuestion /> 
           </Link>
         </li>
