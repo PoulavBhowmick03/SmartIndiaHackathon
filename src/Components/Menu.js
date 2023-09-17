@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./Menu.css";
 import logo from "../img/logo.png";
+import { Link } from 'react-router-dom';
+
 import {
   FaHome,
   FaCertificate,
@@ -28,16 +30,44 @@ function Menu() {
   return (
     <menu>
       <ul id="mainMenu">
-        <Icon icon={<FaHome />} />
-        <Icon icon={<FaCertificate />} />
-        <Icon icon={<FaWallet />} />
-        <Icon icon={<FaSearch />} />
-        <Icon icon={<FaQuestion />} />
+        <li>
+          <Link to="/">
+            <FaHome /> 
+          </Link>
+        </li>
+        <li>
+          <Link to="/certificates">
+            <FaCertificate /> 
+          </Link>
+        </li>
+        <li>
+          <Link to="/wallet">
+            <FaWallet /> 
+          </Link>
+        </li>
+        <li>
+          <Link to="/search">
+            <FaSearch /> 
+          </Link>
+        </li>
+        <li>
+          <Link to="/questions">
+            <FaQuestion /> 
+          </Link>
+        </li>
       </ul>
 
       <ul className="lastMenu">
-        <Icon icon={<FaCog />} />
-        <Icon icon={<FaSignOutAlt />} />
+        <li>
+          <Link to="/settings">
+            <FaCog /> 
+          </Link>
+        </li>
+        <li>
+          <Link to="/logout">
+            <FaSignOutAlt />
+          </Link>
+        </li>
       </ul>
     </menu>
   );
