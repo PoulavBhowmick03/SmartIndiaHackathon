@@ -2,7 +2,7 @@
     width: 100vw;
     height: calc(100% - 45px);
     padding-top: 15px;
-    margin-left: 250px;
+    padding-left: 250px;
   }
   
   .maincontainer .left {
@@ -32,7 +32,45 @@
     margin-right: 10px;
   }
 
-  
+  .maincontainer .details{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .maincontainer .details .det-cen{
+    color: aliceblue;
+    padding: 5px;
+    font-size: 18px;  
+    text-align: center;
+  }
+
+  .btn3{
+    display: flex;
+    width: 60px;
+    height: 30px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 rgba(143, 64, 248,0.5), 0 0 0 0 rgba(39, 200, 245, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn3::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #ff3cac;
+    z-index: -1; 
+}
+
+.btn3:hover{
+    background-color: #cb92b2;  
+    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248,0.5), -10px 10px 25px 0 rgba(39, 200, 245, 0.5);
+}
+
   @media screen and (max-width: 525px) {
     .maincontainer {
       flex-direction: column;
