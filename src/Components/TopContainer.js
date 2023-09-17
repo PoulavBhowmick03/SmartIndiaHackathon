@@ -22,7 +22,7 @@ function TopContainer() {
     <div className="topContainer">
       <img className="logo" src={Logo} alt="logo" width={70} />
       <div className="inputBox">
-        <input type="text" placeholder="Search items, collections" />
+        <input type="text" placeholder="Search Users" />
         <i>
           <BiSearchAlt />
         </i>
