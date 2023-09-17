@@ -1,6 +1,5 @@
 import React from "react";
 import "./MainContainer.css";
-import CardMain from "./CardMain";
 
 function MainContainer() {
   return (

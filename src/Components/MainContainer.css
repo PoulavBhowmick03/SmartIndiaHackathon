@@ -41,7 +41,7 @@
     .maincontainer .left {
       width: 100%;
     }
-    .maincontainer .left .cards main .card_main {
+    .maincontainer .left .cards {
       max-width: 325px;
     }
 
