@@ -1,13 +1,13 @@
 import React from 'react'
 import Menu from "../Components/Menu";
-import Container from "../Components/Container";
-
+import TopContainer from "../Components/TopContainer";
+import Header from '../Components/Header';
 function Home() {
     return (
         <div>
           <Menu />
-          <Container />
-          
+           <TopContainer />
+           <Header/> 
         </div>
     )
 }

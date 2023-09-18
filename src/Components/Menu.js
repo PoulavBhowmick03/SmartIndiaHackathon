@@ -7,7 +7,7 @@ import {
   FaCertificate,
   FaWallet,
   FaSearch,
-  FaQuestion,
+  FaInfo,
   FaCog,
   FaSignOutAlt,
   FaPlus
@@ -52,7 +52,7 @@ function Menu() {
         </li>
         <li>
           <Link to="/about">
-            <FaQuestion /> 
+            <FaInfo /> 
           </Link>
         </li>
         <li>
