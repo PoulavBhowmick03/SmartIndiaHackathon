@@ -8,7 +8,6 @@ import Home from "./pages/Home";
 import Certificate from "./pages/Certificate";
 import About from "./pages/About";
 import Search from "./pages/Search";
-import Wallet from "./pages/Wallet";
 import Generate from "./pages/Generate.js";
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path = "/home" element={<Home/>}/>
         <Route path = "/about" element={<About/>}/>
         <Route path = "/certificate" element={<Certificate/>}/>
-        <Route path = "/wallet" element={<Wallet/>}/>
         <Route path = "/search" element={<Search/>}/>
         <Route path = "/generate" element={<Generate/>}/>
       </Routes>

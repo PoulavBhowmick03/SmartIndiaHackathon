@@ -41,11 +41,6 @@ function Menu() {
           </Link>
         </li>
         <li>
-          <Link to="/wallet">
-            <FaWallet /> 
-          </Link>
-        </li>
-        <li>
           <Link to="/search">
             <FaSearch /> 
           </Link>
