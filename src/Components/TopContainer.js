@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { FaBell, FaChevronDown } from "react-icons/fa";
 import Logo from "../img/logo.png";
 import PB from "../img/PB.jpg";
+import { MetaMaskSDK } from '@metamask/sdk';
 
 function TopContainer() {
+
+  const[walletAddress, setWalletAddress] = useState("");
   useEffect(() => {
     const mouseTarget = document.getElementById("menuChevron");
     const menuContainer = document.getElementById("menuContainer");
@@ -19,6 +22,20 @@ function TopContainer() {
     });
   }, []);
 
+  const connectWallet = async() => {
+    if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
+      try{
+        const accounts = await window.ethereum.request({method: "eth_requestAccounts"});
+        setWalletAddress(accounts[0]);
+        console.log(accounts[0]);
+      } catch(err){
+        console.log(err.message);
+      }
+    } else{
+      console.log("Please Install Metamask");
+    }
+}
+
   return (
     <div className="topContainer">
       <img className="logo" src={Logo} alt="logo" width={70} />
@@ -29,9 +46,14 @@ function TopContainer() {
         </i>
       </div>
 
-
       <div className="profileContainer">
-      <button type="button" className="btnS">0xd0c...C24BD</button>
+      <button type="button" className="btnS" onClick={connectWallet}>                  {walletAddress && walletAddress.length > 0
+                    ? `${walletAddress.substring(
+                        0,
+                        6
+                      )}...${walletAddress.substring(38)}`
+                    : "Connect Wallet"}
+</button>
         <i className="profileIcon">
           <FaBell />
         </i>
