@@ -6,7 +6,7 @@
   }
   
   .maincontainer .left {
-    width: 70%;
+    width: 80%;
     overflow-y: scroll;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
@@ -37,6 +37,11 @@
     justify-content: space-between;
   }
 
+  .maincontainer .details .det-left{
+    padding-top: 3px;
+    padding-right: 9px;
+  }
+
   .maincontainer .details .det-cen{
     color: aliceblue;
     padding: 5px;
@@ -45,7 +50,8 @@
   }
 
   .btn3{
-    display: flex;
+    background-color: rgb(190, 249, 229);
+    margin-bottom: 20px;
     width: 60px;
     height: 30px;
     overflow: hidden;
@@ -68,7 +74,7 @@
 
 .btn3:hover{
     background-color: #cb92b2;  
-    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248,0.5), -10px 10px 25px 0 rgba(39, 200, 245, 0.5);
+    cursor: pointer;
 }
 
   @media screen and (max-width: 525px) {

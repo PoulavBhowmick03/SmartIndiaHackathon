@@ -5,8 +5,8 @@ import Container from "../Components/Container";
 const Search = () => {
   return (
     <div>
+       <Menu />
       <Container />
-          <Menu />
     </div>
   )
 }

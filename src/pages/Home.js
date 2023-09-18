@@ -5,8 +5,9 @@ import Container from "../Components/Container";
 function Home() {
     return (
         <div>
-          <Container />
           <Menu />
+          <Container />
+          
         </div>
     )
 }

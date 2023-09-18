@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { FaBell, FaChevronDown } from "react-icons/fa";
 import Logo from "../img/logo.png";
+import PB from "../img/PB.jpg";
 
 function TopContainer() {
   useEffect(() => {
@@ -28,14 +29,16 @@ function TopContainer() {
         </i>
       </div>
 
+
       <div className="profileContainer">
+      <button type="button" className="btnS">0xd0c...C24BD</button>
         <i className="profileIcon">
           <FaBell />
         </i>
         <div className="profileImage">
-          <img alt="" />
+          <img src={PB}alt="" />
         </div>
-        <p className="profileName">Poulav</p>
+        <p className="profileName">Poulav Bhowmick</p>
         <i className="menuChevron" id="menuChevron">
           <FaChevronDown />
         </i>

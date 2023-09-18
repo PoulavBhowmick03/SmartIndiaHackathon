@@ -2,12 +2,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import Menu from "./Components/Menu";
 import Container from "./Components/Container";
+import Form from "./Components/Form";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Certificate from "./pages/Certificate";
 import About from "./pages/About";
 import Search from "./pages/Search";
 import Wallet from "./pages/Wallet";
+import Generate from "./pages/Generate.js";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path = "/certificate" element={<Certificate/>}/>
         <Route path = "/wallet" element={<Wallet/>}/>
         <Route path = "/search" element={<Search/>}/>
+        <Route path = "/generate" element={<Generate/>}/>
       </Routes>
       </BrowserRouter>
     </div>

@@ -5,8 +5,8 @@ import Container from "../Components/Container";
 const Wallet = () => {
   return (
     <div>
+      <Menu />
       <Container />
-          <Menu />
     </div>
   )
 }

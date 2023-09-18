@@ -5,8 +5,9 @@ import Container from "../Components/Container";
 const About = () => {
   return (
     <div>
+      <Menu />
       <Container />
-          <Menu />
+          
     </div>
   )
 }

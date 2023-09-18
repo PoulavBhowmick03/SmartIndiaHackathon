@@ -10,6 +10,7 @@ import {
   FaQuestion,
   FaCog,
   FaSignOutAlt,
+  FaPlus
 } from "react-icons/fa";
 
 function Menu() {
@@ -52,6 +53,11 @@ function Menu() {
         <li>
           <Link to="/about">
             <FaQuestion /> 
+          </Link>
+        </li>
+        <li>
+          <Link to="/generate">
+            <FaPlus /> 
           </Link>
         </li>
       </ul>
